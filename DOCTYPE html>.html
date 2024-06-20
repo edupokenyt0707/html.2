@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade AluraBooks</title>
+    <style>
+        /* Estilos de exemplo para o cabeçalho, menu e carrosséis */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .menu {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .carrossel {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .carrossel-item {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        /* Estilos para dispositivos móveis */
+        @media screen and (max-width: 600px) {
+            .menu {
+                display: none; /* Oculta o menu em telas menores */
+            }
+            .carrossel-item {
+                font-size: 14px; /* Reduz o tamanho do texto no carrossel */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AluraBooks</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Mais Vendidos</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="carrossel">
+        <div class="carrossel-item">
+            <h2>Carrossel Item 1</h2>
+            <p>Descrição do item 1 do carrossel.</p>
+        </div>
+        <div class="carrossel-item">
+            <h2>Carrossel Item 2</h2>
+            <p>Descrição do item 2 do carrossel.</p>
+        </div>
+        <div class="carrossel-item">
+            <h2>Carrossel Item 3</h2>
+            <p>Descrição do item 3 do carrossel.</p>
+        </div>
+    </div>
+    <main>
+        <section>
+            <h2>Mais Vendidos</h2>
+            <p>Descrição dos mais vendidos.</p>
+        </section>
+        <section>
+            <h2>Autora: Juliana Garikov</h2>
+            <p>Informações sobre a autora.</p>
+        </section>
+        <section>
+            <h2>Novidades</h2>
+            <p>Fique por dentro das novidades.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Rodapé do AluraBooks</p>
+    </footer>
+</body>
+</html>

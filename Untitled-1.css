@@ -1,0 +1,45 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.carrossel {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.carrossel-item {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none; /* Oculta o menu em telas menores */
+    }
+
+    .carrossel-item {
+        font-size: 14px; /* Reduz o tamanho do texto no carrossel */
+    }
+}
